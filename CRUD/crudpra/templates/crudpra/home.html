@@ -1,0 +1,9 @@
+<h1>helo</h1>
+<a href = "{% url 'create' %}">글쓰기</a>
+{% for x in post %}
+    <p>제목 :{{x.title}}</p>
+    <p>쓸 내용 :{{x.body}}</p>
+    <p>쓴 사람 :{{x.author}}</p>
+    <a href="{% url 'update' x.pk %}">글수정</a>
+    <a href="{% url 'delete' x.pk %}">글삭제</a>
+{% endfor %}
