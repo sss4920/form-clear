@@ -7,5 +7,6 @@ urlpatterns = [
     path('<int:pk>/',views.update, name='update'),
     path('<int:pk>/delete/',views.delete, name='delete'),
     path('weather/',views.weather, name='weather'),
+    path('photo/',views.photo, name='photo'),
     # path('detail/<int:pk>/',views.detail, name='Read'),
 ]

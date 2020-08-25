@@ -1,5 +1,6 @@
 <h1>helo</h1>
 <a href = "{% url 'create' %}">글쓰기</a>
+<a href = "{% url 'photo' %}">사진보기</a>
 {% for x in post %}
     <p>제목 :{{x.title}}</p>
     <p>쓸 내용 :{{x.body}}</p>
